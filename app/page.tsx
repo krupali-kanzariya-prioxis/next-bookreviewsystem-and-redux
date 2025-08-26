@@ -29,16 +29,17 @@ export default function Home() {
 
   return (
     //Day 1(Props, UseState, UseEffect)
-    // <div>
-    //   <GetGreetingsWithName name="Krupali"/>
-    //   <h4>{count}</h4>
-    //   <button onClick={IncrementCount}>Increment</button>
-    //   <Timer/>
-    // </div>
+    <>
+    <div className="container">
+      <GetGreetingsWithName name="Krupali"/>
+      <h4>{count}</h4>
+      <button className="btn btn-dark" onClick={IncrementCount}>Increment</button>
+      {/* <Timer/> */}
+    </div>
 
-    //Day 2 (Routing with UseState)
     <div className="center-page">
       <h1 className="text-m font-bold">Welcome to Home Page</h1>
     </div>
+    </>
   );
 }
