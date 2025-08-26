@@ -81,7 +81,6 @@ export default function ContactUsListPage() {
         </div>
       </div>
 
-      {/* Edit Modal */}
       <div
         className="modal fade"
         id="editModal"

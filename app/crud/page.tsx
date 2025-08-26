@@ -78,7 +78,6 @@ export default function CrudPage() {
           </div>
         </form>
 
-        {/* Table */}
         <table className="table table-bordered text-center">
           <thead className="table-light">
             <tr>

@@ -18,7 +18,7 @@ const formatDate = (dateString: string | null | undefined) => {
 };
 
 export default function ReviewDetails() {
-  const { reviewSid } = useParams(); // get [reviewSid] from URL
+  const { reviewSid } = useParams();
   const [review, setReview] = useState<ReviewResponseModel | null>(null);
 
   useEffect(() => {

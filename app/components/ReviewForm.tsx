@@ -17,7 +17,7 @@ export default function ReviewForm({ reviewSid }: ReviewFormProps) {
   useEffect(() => {
   if (reviewSid) {
     getReviewById(reviewSid).then((review) => {
-      if (review) {  // ✅ check for null before using
+      if (review) {
         setBookId(review.bookId.toString());
         setReviewerName(review.reviewerName);
         setRating(review.rating);

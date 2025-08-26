@@ -31,7 +31,6 @@
 //   return (
 //     <div className="container my-5">
 //       <div className="row g-4">
-//         {/* Contact Form */}
 //         <div className="col-md-6">
 //           <div className="card shadow-sm border-0 rounded-3">
 //             <div className="card-body p-4">
@@ -87,7 +86,6 @@
 //           </div>
 //         </div>
 
-//         {/* Preview Section - show only after submit */}
 //         <div className="col-md-6">
 //           {submittedData && (
 //             <div className="card shadow-sm border-0 rounded-3">
@@ -156,7 +154,6 @@
 //   return (
 //     <div className="container my-5">
 //       <div className="row g-4">
-//         {/* Contact Form */}
 //         <div className="col-md-6">
 //           <div className="card shadow-sm border-0 rounded-3">
 //             <div className="card-body p-4">
@@ -215,7 +212,6 @@
 //           </div>
 //         </div>
 
-//         {/* Preview Section - show only after submit */}
 //         <div className="col-md-6">
 //           {submissions.length > 0 && (
 //             <div className="card shadow-sm border-0 rounded-3">
@@ -294,7 +290,6 @@
 //   return (
 //     <div className="container my-5">
 //       <div className="row g-4">
-//         {/* Contact Form */}
 //         <div className="col-md-6">
 //           <div className="card shadow-sm border-0 rounded-3">
 //             <div className="card-body p-4">
@@ -353,7 +348,6 @@
 //           </div>
 //         </div>
 
-//         {/* Submissions Preview */}
 //         <div className="col-md-6">
 //           {submissions.length > 0 && (
 //             <div className="card shadow-sm border-0 rounded-3">

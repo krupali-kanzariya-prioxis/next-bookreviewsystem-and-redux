@@ -69,7 +69,7 @@ export default function GetAllReviews() {
 
   return (
     <div className="container mt-4">
-      {/* Header */}
+
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h1>All Reviews</h1>
         <Link href="/add-review" className="btn btn-dark btn-sm">
@@ -77,7 +77,6 @@ export default function GetAllReviews() {
         </Link>
       </div>
 
-      {/* Controls */}
       <div className="row g-2 mb-3">
         <div className="col-md-3">
           <input
@@ -131,7 +130,6 @@ export default function GetAllReviews() {
         </div>
       </div>
 
-      {/* Filters */}
       <div className="row g-2 mb-4">
         <div className="col-md-3">
           <select
@@ -165,7 +163,6 @@ export default function GetAllReviews() {
             <option value="<">&lt;</option>
             <option value=">=">&gt;=</option>
             <option value="<=">&lt;=</option>
-            <option value="LIKE">LIKE</option>
           </select>
         </div>
         <div className="col-md-3">
@@ -208,7 +205,6 @@ export default function GetAllReviews() {
         </div>
       </div>
 
-      {/* List */}
       {loading ? (
         <p>Loading…</p>
       ) : (
@@ -244,7 +240,6 @@ export default function GetAllReviews() {
         </div>
       )}
 
-      {/* Pagination */}
       {meta && meta.total_page_num > 0 ? (
         <div className="d-flex justify-content-center align-items-center mt-4 gap-3">
           <button

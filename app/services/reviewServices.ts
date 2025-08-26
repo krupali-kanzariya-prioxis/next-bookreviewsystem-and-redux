@@ -32,7 +32,7 @@ export interface ApiResponse {
 export interface Filter {
   key: string;
   value: string | number;
-  condition: string; // '=', '!=', '>', '<', 'LIKE', etc.
+  condition: string;
 }
 
 const API_BASE_URL = "http://localhost:5156/api/Review"; 
@@ -42,33 +42,6 @@ export interface Filter {
   value: string | number;
   condition: string;
 }
-
-// export const getReviews = async (
-//   page: number,
-//   pageSize: number,
-//   searchText?: string,
-//   sortColumn?: string,
-//   sortOrder?: string,
-//   filters?: Filter[]
-// ) => {
-//   const response = await fetch("http://localhost:5156/api/Review", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json",
-//     },
-//     body: JSON.stringify({
-//       Page: page,
-//       PageSize: pageSize,
-//       SearchText: searchText ?? "",
-//       SortColumn: sortColumn ?? "",
-//       SortOrder: sortOrder ?? "",
-//       Filters: filters ?? [],
-//     }),
-//   });
-
-//   if (!response.ok) throw new Error("Failed to fetch reviews");
-//   return await response.json();
-// };
 
 export const getReviews = async (opts: {
   page: number;
@@ -116,8 +89,8 @@ export const addOrUpdateReview = async (
 ): Promise<any> => {
   try {
     const url = reviewSid
-      ? `${API_BASE_URL}/AddOrUpdateReview/${reviewSid}` // Update
-      : `${API_BASE_URL}/AddOrUpdateReview`;            // Add
+      ? `${API_BASE_URL}/AddOrUpdateReview/${reviewSid}`
+      : `${API_BASE_URL}/AddOrUpdateReview`;
 
     const response = await axios.post(url, review, {
       headers: { "Content-Type": "application/json" },
